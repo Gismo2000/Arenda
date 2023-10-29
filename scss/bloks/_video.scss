@@ -1,0 +1,85 @@
+// .video {
+//   padding: 130px 0;
+// }
+
+// .video-wrapper {
+//   display: flex;
+//   justify-content: center;
+//   width: 720px;
+//   margin: auto;
+//   border: 3px double;
+//   transition: border-color 0.3s;
+// }
+
+// .video-wrapper:hover {
+//   border-color: $accent;
+//   /* Новый цвет рамки при наведении ($accent) */
+// }
+
+// .process-video {
+//   width: 720px;
+//   height: 650px;
+// }
+
+
+.video {
+  overflow: hidden;
+text-align: center;
+position: relative;
+
+//  razmeschenie RIMSKIH ZIFR
+&::after {
+  content: "IV"; 
+  position: absolute;
+  top: 0;
+  left: calc(50% + 550px);
+  transform: translate(-50%, 8%);
+  
+  opacity: 0.02;
+  color: #FFF;
+text-align: center;
+font-family: $font-accent;
+font-size: 400px;
+font-weight: 700;
+}
+
+}
+
+.video__link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #2a2a2a29;
+    transition: background-color 0.2s ease-in ;
+  }
+
+  &:hover::before{
+    background: #56555529;
+  }
+
+}
+.video__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in ;
+
+  @include mediaTablet {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+.video__link:hover .video__icon{
+transform:translate(-50%, -50%) scale(1.2);
+filter: saturate(1.5);
+}

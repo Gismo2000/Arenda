@@ -1,0 +1,38 @@
+.form__input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  &:focus{
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+.form__privat {
+font-size: 13px;
+font-weight: 400;
+line-height: 1.23; 
+text-align: center;
+
+
+@include mediaTablet {
+    
+    grid-row:4/5 ;
+}
+
+}
+.form__button {
+  height: 50px;
+  padding: 12px;
+  font-size: 16px;
+  color: $white;
+  background-color: $accent;
+  font-weight: 700;
+  text-align: center;
+  &:hover{
+    background-color:saturate($accent,10%);
+
+  }
+
+}
+

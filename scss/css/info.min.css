@@ -1,0 +1,1 @@
+.info{position:relative;font-size:18px;padding-left:35px}.info--map::before,.info--phone::before{content:"";position:absolute;left:0px;top:0px;width:21px;height:21px;background-repeat:no-repeat}.info--map::before{background-image:url(./../img/header/placeholder.svg)}.info--phone::before{background-image:url(./../img/header/phone-call.svg)}

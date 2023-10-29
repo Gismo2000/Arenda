@@ -1,0 +1,67 @@
+.benefits{
+  overflow: hidden;
+  position: relative;
+padding: 120px 0px;
+//  razmeschenie RIMSKIH ZIFR
+&::after {
+  content: "II"; 
+  position: absolute;
+  top: 0;
+  left: calc(50% + 550px);
+  transform: translate(-50%, -5%);
+  
+  opacity: 0.02;
+  color: #FFF;
+text-align: center;
+font-family: $font-accent;
+font-size: 400px;
+font-weight: 700;
+}
+}
+
+
+.benefits__row{
+display: flex;
+justify-content: space-between;
+// column-gap: 70px;
+
+// Mobilki
+@include mediaTablet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px, 1fr));
+    gap: 40px 30px;
+}
+
+}
+
+
+.benefits__item {
+  text-align: center;
+}
+
+
+.benefits__item-img {
+  margin-bottom: 53px;
+
+  // Mobilki
+  @include mediaTablet {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+  }
+}
+
+
+.benefits__item-text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  color: $white;
+  font-family: $font-seconderi;
+
+    // Mobilki
+    @include mediaTablet {
+      font-size: 16px;
+
+  }
+}
